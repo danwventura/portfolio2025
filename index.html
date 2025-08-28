@@ -13,41 +13,41 @@
 </head>
 <body>
     <header>
-        <!-- Add mobile buttons here later -->
-
-        <span>Dan V.</span>
-        <button id="menuButton" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobileNav">
-            <svg id="openIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>            
-            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-        </button>
-        <nav id="mobileNav" class="mobile-nav" aria-hidden="true" >
-            <ul>
-                <!-- <li><a href="#home">Home</a></li> -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="desktop-nav">
-            <ul>
-                <!-- <li><a href="#home">Home</a></li> -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+        <div class="top-nav">
+            <span>Dan V.</span>
+            <button id="menuButton" class="menu-btn" aria-expanded="false" aria-label="Navigation Menu" aria-controls="mobileNav">
+                <svg id="openIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>            
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+            <nav id="mobileNav" class="mobile-nav" aria-hidden="true" >
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="desktop-nav">
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <section class="hero-container">
-            <div class="hero-img-container">
-                <img src="img/headshot.jpg" alt="Dan Ventura"/>
-            </div>
             <div class="hero-text-container">
                 <h1>Dan Ventura</h1>
                 <p>Clean code, modern design, real results</p>
                 <a class="btn" href="#projects">Check out my work</a>
             </div>
+            <div class="hero-img-container">
+                <img src="img/headshot.jpg" class="rounded-image" alt="Dan Ventura"/>
+            </div>
         </section>
+    </header>
+    <main>
         <section id="about" class="about-container">
             <!-- <div class="section-square"></div> -->
             <h2>About Me</h2>
@@ -72,7 +72,7 @@
         </section>
     </main>
     <footer>
-        <span>Dan Ventura 2025&copy;</span>
+        <span>Dan Ventura 2025 &copy;</span>
     </footer>
     <script type="text/javascript" src="logic.js"></script>
 </body>
