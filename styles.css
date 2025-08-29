@@ -52,11 +52,22 @@ a {
 
 header{
     /* position: relative; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     color:var(--header-text);
     background-color: var(--primary);
+    background: 
+        /* Top-right corner */
+        radial-gradient(circle 1000px at 100% 0%, rgba(230, 116, 41, 0.7) 0%, transparent 85%),
+        /* Bottom-left corner */
+        radial-gradient(circle 1200px at 0% 100%, rgba(13, 125, 255, 0.7) 0%, transparent 85%),
+        /* Dark base color that dominates the center */
+        #0f0f23;
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .top-nav{
