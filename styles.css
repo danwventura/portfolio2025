@@ -170,15 +170,30 @@ header{
 
     .desktop-nav{
         display: block;
+        font-size: 20px;
     }
 
-    /* header{
-        margin-inline: 1rem;
-        padding-inline: 3rem;
-    } */
 
     .desktop-nav ul{
         display: flex;
         gap: 3rem;
+        margin-top: 3rem;
+        margin-right: 18rem;
     }
+
+    .desktop-nav ul li{
+        padding: 5px 18px;
+    }
+
+    #hireMeDesktop{
+        border: 2px solid #ff0642;
+        border-radius: 31px;
+        /* padding: 2px; */
+    }
+
+    #hireMeDesktop:hover{
+        background-color: #ff0642;
+        color: var(--primary);
+    }
+
 }
