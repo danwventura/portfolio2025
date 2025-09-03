@@ -6,14 +6,14 @@
 
 /* VARIABLES */
 :root{
-    --body-bg: #0d7dff;
+    --body-bg: #0a17a9;
     --header-text: #f8fafc;
     --body-text: #1e2938;
     --headings: #64b5f6;
     --primary: #193549;
     --primary-shadow: #15232D;
     --secondary: #ff8c42;
-    --secondary-shaow: #e67429;
+    --secondary-shadow: #e67429;
     font-family: "Roboto", sans-serif;
     text-align: center;
 
@@ -50,7 +50,7 @@ a {
 /* HEADER */
 
 header{
-
+    /* background-color: pink; */
     height: 100vh;
     display: flex; 
     flex-direction: column;
@@ -59,14 +59,25 @@ header{
     background-color: var(--primary);
     background:  
         /* Top-right corner */
-        radial-gradient(circle 1000px at 100% 0%, rgba(230, 116, 41, 0.7) 0%, transparent 85%),
+        radial-gradient(circle 1000px at 100% 0%, rgb(9, 23, 170) 0%, transparent 85%),
         /* Bottom-left corner */
-        radial-gradient(circle 1200px at 0% 100%, rgba(13, 125, 255, 0.7) 0%, transparent 85%),
+        radial-gradient(circle 1200px at 0% 100%, rgb(116, 8, 53) 0%, transparent 85%),
         /* Dark base color that dominates the center */
         #0f0f23;
     border-radius: 20px; 
     padding: 20px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    font-size: 42px;
+    font-weight: 500;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+#logo_last{
+    color: #ff0642;
 }
 
 .top-nav{
@@ -97,7 +108,10 @@ header{
 /* HERO SECTION */
 
 .hero-container{
+    /* background-color: lime; */
     display: flex;
+    flex-direction: row;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
 }
@@ -116,14 +130,6 @@ header{
 
 }
 
-.main-img-bg{
-    width: inherit;
-    height: inherit;
-}
-
-.hero-img-container img {
-    width: 200px;
-}
 
 
 /* MOBILE NAV */
@@ -166,10 +172,10 @@ header{
         display: block;
     }
 
-    header{
+    /* header{
         margin-inline: 1rem;
         padding-inline: 3rem;
-    }
+    } */
 
     .desktop-nav ul{
         display: flex;
