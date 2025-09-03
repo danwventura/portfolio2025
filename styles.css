@@ -51,34 +51,34 @@ a {
 /* HEADER */
 
 header{
-    /* position: relative; */
+
     height: 100vh;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    padding: 2rem 1rem 1rem 1rem;
+    align-items: center;
     color:var(--header-text);
     background-color: var(--primary);
-    background: 
+    background:  
         /* Top-right corner */
         radial-gradient(circle 1000px at 100% 0%, rgba(230, 116, 41, 0.7) 0%, transparent 85%),
         /* Bottom-left corner */
         radial-gradient(circle 1200px at 0% 100%, rgba(13, 125, 255, 0.7) 0%, transparent 85%),
         /* Dark base color that dominates the center */
         #0f0f23;
-    border-radius: 20px; /* Rounded corners */
-    padding: 20px; /* Add padding */
+    border-radius: 20px; 
+    padding: 20px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .top-nav{
     display: flex;
-    /* background-color: lime; */
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
-.desktop-nav{
-    display: flex;
+.desktop-nav ul li{
+    align-self: flex-end;
+    font-weight: bold;
 }
 
 .menu-btn {
@@ -99,8 +99,8 @@ header{
 
 .hero-container{
     display: flex;
-    /* background-color: violet; */
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-img-container{
