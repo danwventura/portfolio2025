@@ -59,9 +59,9 @@ header{
     background-color: var(--primary);
     background:  
         /* Top-right corner */
-        radial-gradient(circle 1000px at 100% 0%, rgb(9, 23, 170) 0%, transparent 85%),
+        radial-gradient(circle 1000px at 100% 0%, #0917aa 0%, transparent 85%),
         /* Bottom-left corner */
-        radial-gradient(circle 1200px at 0% 100%, rgb(116, 8, 53) 0%, transparent 85%),
+        radial-gradient(circle 1200px at 0% 100%, #740835 0%, transparent 85%),
         /* Dark base color that dominates the center */
         #0f0f23;
     border-radius: 20px; 
@@ -119,16 +119,16 @@ header{
 .hero-img-container{
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 
-/* .rounded-image{
-    width: 100%;
-    height: auto;
-    border-radius: 100px;
-
-} */
+.rounded-image{
+    border-radius: 69px;
+    background: linear-gradient(45deg, #1024fc, #ff0642); 
+    animation: rainbow 3s linear infinite; 
+    padding: .75rem;
+}
 
 
 
