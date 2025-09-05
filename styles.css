@@ -120,6 +120,12 @@ header{
     text-align: left;
 }
 
+#dynamic-text {
+    /* display: inline-block; */
+    min-height: 50px; /* Set a minimum height */
+    line-height: 1.2; /* Adjust line height for better spacing */
+}
+
 .hero-text-container a{
     display: inline-block;
     text-align: left;
