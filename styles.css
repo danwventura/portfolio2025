@@ -35,6 +35,20 @@ a {
   color: inherit;
 }
 
+.orange_text {
+  color: #ff0642;
+}
+
+.orange_underline {
+  text-decoration: underline;
+  text-decoration-color: #ff0642;
+  text-decoration-thickness: 0.3rem;
+}
+
+.bottomMargin1Rem {
+  margin-bottom: 1rem;
+}
+
 /* MOBILE: HEADER */
 
 header {
@@ -60,20 +74,6 @@ header {
 
 .logo a img {
   max-width: 2rem;
-}
-
-.orange_text {
-  color: #ff0642;
-}
-
-.orange_underline {
-  text-decoration: underline;
-  text-decoration-color: #ff0642;
-  text-decoration-thickness: 0.3rem;
-}
-
-.bottomMargin1Rem {
-  margin-bottom: 1rem;
 }
 
 /* MOBILE NAV */
@@ -256,6 +256,18 @@ header {
   gap: 5rem;
 }
 
+#vertical-project-icons {
+  display: none;
+}
+
+#vertical-node-divider {
+  display: none;
+}
+
+#vertical-skills {
+  display: none;
+}
+
 #horizontal-project-icons {
   display: flex;
   align-items: center;
@@ -265,10 +277,6 @@ header {
 
 .projectIcon img {
   max-width: 3rem;
-}
-
-#vertical-node-divider {
-  display: none;
 }
 
 #horizontal-node-divider {
@@ -413,9 +421,42 @@ header {
     padding: 0.75rem;
   }
 
+  /* ABOUT ME SECTION */
+  .tech-icons-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.25rem;
+    margin-bottom: 5rem;
+    gap: 4rem;
+  }
+
+  .icon-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers items */
+    padding: 4px; /* Optional: adds padding */
+  }
+
   .icon-container img {
-    max-width: 8rem;
-    /* fill: 100%; */
+    max-width: 11rem;
+  }
+
+  .icon-container span {
+    padding-left: 1rem;
+    font-size: 2rem;
+  }
+
+  #icons-second-row {
+    gap: 4rem;
+  }
+
+  #icons-second-row .icon-container img {
+    max-width: 9rem;
+  }
+
+  #horizontal-project-icons {
+    display: none;
   }
 
   #horizontal-node-divider {
@@ -426,7 +467,32 @@ header {
     display: none;
   }
 
-  #horizontal-project-icons {
-    display: none;
+  #vertical-node-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center dots and line vertically */
+    flex-grow: 0.5;
+    margin: 0 auto;
+  }
+
+  #vertical-node-divider .line {
+    width: 1rem; /* Width of the line */
+    height: 2px; /* Height of the line */
+    background-color: #ff0642; /* Color of the line */
+    margin: 0 10px; /* Space between dots and line */
+  }
+
+  #vertical-node-divider .dot {
+    width: 0.5rem; /* Diameter of the dot */
+    height: 0.5rem; /* Diameter of the dot */
+    background-color: #ff0642; /* Color of the dot */
+    border-radius: 50%; /* Makes the dot circular */
+  }
+
+  #vertical-skills {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin-bottom: 1rem;
   }
 }
