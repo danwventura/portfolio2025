@@ -58,13 +58,6 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* .logo{
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-left: 1rem;
-    margin-top: .5rem;
-} */
-
 .logo a img {
   max-width: 2rem;
 }
@@ -76,7 +69,11 @@ header {
 .orange_underline {
   text-decoration: underline;
   text-decoration-color: #ff0642;
-  text-decoration-thickness: 0.35rem;
+  text-decoration-thickness: 0.3rem;
+}
+
+.bottomMargin1Rem {
+  margin-bottom: 1rem;
 }
 
 /* MOBILE NAV */
@@ -239,27 +236,35 @@ header {
 
 .icon-container {
   display: flex; /* Enables flexbox layout */
-  /* flex-direction: row; */
   align-items: center; /* Vertically centers items */
   padding: 4px; /* Optional: adds padding */
 }
 
 .icon-container img {
-  /* display: inline-block; */
-  max-width: 3rem;
+  max-width: 2rem;
 }
 
 .icon-container span {
   padding-left: 0.25rem;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 #icons-second-row {
   display: flex;
-  /* display:inline; */
   flex-direction: row;
-  margin: 1rem 3rem;
-  gap: 3rem;
+  margin: 0.5rem 3rem;
+  gap: 5rem;
+}
+
+#horizontal-project-icons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.projectIcon img {
+  max-width: 3rem;
 }
 
 #vertical-node-divider {
@@ -271,21 +276,27 @@ header {
   align-items: center; /* Center dots and line vertically */
   flex-grow: 0.5;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
 
 #horizontal-node-divider .line {
   width: 5rem; /* Width of the line */
   height: 2px; /* Height of the line */
-  background-color: #ffffff; /* Color of the line */
+  background-color: #ff0642; /* Color of the line */
   margin: 0 10px; /* Space between dots and line */
 }
 
 #horizontal-node-divider .dot {
   width: 0.5rem; /* Diameter of the dot */
   height: 0.5rem; /* Diameter of the dot */
-  background-color: #ffffff; /* Color of the dot */
+  background-color: #ff0642; /* Color of the dot */
   border-radius: 50%; /* Makes the dot circular */
+}
+
+#horizontal-skills {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  margin-bottom: 1rem;
 }
 
 /******************* DESKTOP MEDIA QUERY ******************/
@@ -294,13 +305,6 @@ header {
   header {
     height: 100vh;
   }
-
-  /* .logo{
-        font-size: 42px;
-        font-weight: 500;
-        margin-left: 10rem;
-        margin-top: 2rem;
-    } */
 
   .logo a img {
     max-width: 5rem;
@@ -415,6 +419,14 @@ header {
   }
 
   #horizontal-node-divider {
+    display: none;
+  }
+
+  #horizontal-skills {
+    display: none;
+  }
+
+  #horizontal-project-icons {
     display: none;
   }
 }
