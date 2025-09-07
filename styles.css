@@ -284,6 +284,7 @@ header {
   align-items: center; /* Center dots and line vertically */
   flex-grow: 0.5;
   margin: 0 auto;
+  margin-bottom: 0.75rem;
 }
 
 #horizontal-node-divider .line {
@@ -422,6 +423,11 @@ header {
   }
 
   /* ABOUT ME SECTION */
+
+  .about-container {
+    display: flex;
+  }
+
   .tech-icons-container {
     display: flex;
     justify-content: space-between;
@@ -439,7 +445,7 @@ header {
   }
 
   .icon-container img {
-    max-width: 11rem;
+    max-width: 8rem;
   }
 
   .icon-container span {
@@ -452,7 +458,7 @@ header {
   }
 
   #icons-second-row .icon-container img {
-    max-width: 9rem;
+    max-width: 7rem;
   }
 
   #horizontal-project-icons {
@@ -467,32 +473,62 @@ header {
     display: none;
   }
 
+  #about-me-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about-me-text {
+    margin-left: 15%;
+    max-width: 30%;
+  }
+
+  #about-me-text p {
+    font-size: 1.25rem;
+  }
+
+  #about-me-divider {
+    margin-top: 2rem;
+    margin-left: 20%;
+    display: inline-flex;
+  }
+
+  #vertical-project-icons {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  #vertical-project-icons div {
+    margin-bottom: 5rem;
+  }
+
   #vertical-node-divider {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center dots and line vertically */
-    flex-grow: 0.5;
-    margin: 0 auto;
+    margin: 1rem 1rem;
   }
 
-  #vertical-node-divider .line {
-    width: 1rem; /* Width of the line */
-    height: 2px; /* Height of the line */
-    background-color: #ff0642; /* Color of the line */
-    margin: 0 10px; /* Space between dots and line */
+  .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #ff0642;
+    border-radius: 50%;
   }
 
-  #vertical-node-divider .dot {
-    width: 0.5rem; /* Diameter of the dot */
-    height: 0.5rem; /* Diameter of the dot */
-    background-color: #ff0642; /* Color of the dot */
-    border-radius: 50%; /* Makes the dot circular */
+  .line {
+    margin-left: 0.25rem;
+    width: 0.25rem;
+    height: 8.5rem;
+    background-color: #ff0642;
   }
 
   #vertical-skills {
     display: flex;
-    align-items: center;
-    gap: 1.7rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    margin-top: 0.65rem;
+  }
+
+  .projectType {
+    margin-bottom: 7rem;
   }
 }
