@@ -66,7 +66,7 @@ header {
     ),
     /* Bottom-left corner */
       radial-gradient(circle 1000px at 0% 100%, #740835 0%, transparent 85%),
-    /* Dark base color that dominates the center */ #0f0f23;
+    #0f0f23;
   border-radius: 20px 20px 0 0;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -128,8 +128,6 @@ header {
 /* MOBILE: HERO SECTION */
 
 .hero-container {
-  /* background-color: lime; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,8 +145,8 @@ header {
 }
 
 #dynamic-text {
-  min-height: 50px; /* Set a minimum height */
-  line-height: 1.2; /* Adjust line height for better spacing */
+  min-height: 50px;
+  line-height: 1.2;
 }
 
 .hero-text-container #hero-btn-container a {
@@ -207,15 +205,13 @@ header {
   align-items: center;
   color: var(--header-text);
   background-color: var(--primary);
-  background:  
-        /* Top-right corner */ radial-gradient(
+  background: radial-gradient(
       circle 1000px at 0% 0%,
       #740835 0%,
       transparent 85%
     ),
-    /* Bottom-left corner */
-      radial-gradient(circle 1000px at 100% 100%, #0917aa 0%, transparent 85%),
-    /* Dark base color that dominates the center */ #0f0f23;
+    radial-gradient(circle 1000px at 100% 100%, #0917aa 0%, transparent 85%),
+    #0f0f23;
   padding: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
@@ -235,9 +231,9 @@ header {
 }
 
 .icon-container {
-  display: flex; /* Enables flexbox layout */
-  align-items: center; /* Vertically centers items */
-  padding: 4px; /* Optional: adds padding */
+  display: flex;
+  align-items: center;
+  padding: 4px;
 }
 
 .icon-container img {
@@ -281,24 +277,24 @@ header {
 
 #horizontal-node-divider {
   display: flex;
-  align-items: center; /* Center dots and line vertically */
+  align-items: center;
   flex-grow: 0.5;
   margin: 0 auto;
   margin-bottom: 0.75rem;
 }
 
 #horizontal-node-divider .line {
-  width: 5rem; /* Width of the line */
-  height: 2px; /* Height of the line */
-  background-color: #ff0642; /* Color of the line */
-  margin: 0 10px; /* Space between dots and line */
+  width: 5rem;
+  height: 2px;
+  background-color: #ff0642;
+  margin: 0 10px;
 }
 
 #horizontal-node-divider .dot {
-  width: 0.5rem; /* Diameter of the dot */
-  height: 0.5rem; /* Diameter of the dot */
-  background-color: #ff0642; /* Color of the dot */
-  border-radius: 50%; /* Makes the dot circular */
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ff0642;
+  border-radius: 50%;
 }
 
 #horizontal-skills {
@@ -373,8 +369,8 @@ header {
 
   #dynamic-text {
     display: block;
-    min-height: 50px; /* Set a minimum height */
-    line-height: 1.2; /* Adjust line height for better spacing */
+    min-height: 50px;
+    line-height: 1.2;
   }
 
   .hero-text-container #hero-btn-container a {
@@ -439,9 +435,9 @@ header {
   }
 
   .icon-container {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically centers items */
-    padding: 4px; /* Optional: adds padding */
+    display: flex;
+    align-items: center;
+    padding: 4px;
   }
 
   .icon-container img {
