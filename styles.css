@@ -411,6 +411,78 @@ a {
   max-width: 1rem;
 }
 
+/* MOBILE: CONTACT ME*/
+
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--header-text);
+  background-color: var(--primary);
+  background: radial-gradient(
+      circle 1000px at 0% 0%,
+      #740835 0%,
+      transparent 85%
+    ),
+    radial-gradient(circle 1000px at 100% 100%, #0917aa 0%, transparent 85%),
+    #0f0f23;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2{
+  margin-bottom: 1rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid;
+    box-sizing: border-box;
+    
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid  #0917aa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 /******************* DESKTOP MEDIA QUERY ******************/
 
 @media (min-width: 1024px) {
