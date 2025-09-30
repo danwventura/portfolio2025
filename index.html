@@ -226,17 +226,92 @@
             </div>
         </section>
         <section id="contact" class="contact-container">
-            <h2>Contact</h2>
-            <p>Let's work together</p>
-            <div class="socials-container">
+            <h2 class="orange_underline">Let's work together</h2>
+            <div class="form-container">
+                <form class="flex-form">
+                    <span class="form-description">Reserve a time for a consultation and I'll help you reach your goals! It's completely free, and I'll do everything I can to set you up for success!</span>
+                    <div class="form-group">
+                        <label for="schedule-name">Name:</label>
+                        <input type="text" name="schedule-name" id="schedule-name"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-email">Email:</label>
+                        <input type="email" name="schedule-email" id="schedule-email"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-date">Day:</label>
+                        <input type="date" name="schedule-name" id="schedule-date" min="2025-09-15" max="2030-09-15"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule-time">Time:</label>
+                        <select name="time" id="time" required="">
+                            <option value="8:00 AM">8:00 AM</option>
+                            <option value="8:15 AM">8:15 AM</option>
+                            <option value="8:30 AM">8:30 AM</option>
+                            <option value="8:45 AM">8:45 AM</option>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="9:15 AM">9:15 AM</option>
+                            <option value="9:30 AM">9:30 AM</option>
+                            <option value="9:45 AM">9:45 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:15 AM">10:15 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
+                            <option value="10:45 AM">10:45 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:15 AM">11:15 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
+                            <option value="11:45 AM">11:45 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="12:15 PM">12:15 PM</option>
+                            <option value="12:30 PM">12:30 PM</option>
+                            <option value="12:45 PM">12:45 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="1:15 PM">1:15 PM</option>
+                            <option value="1:30 PM">1:30 PM</option>
+                            <option value="1:45 PM">1:45 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="2:15 PM">2:15 PM</option>
+                            <option value="2:30 PM">2:30 PM</option>
+                            <option value="2:45 PM">2:45 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="3:15 PM">3:15 PM</option>
+                            <option value="3:30 PM">3:30 PM</option>
+                            <option value="3:45 PM">3:45 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="form-button" id="schedule-btn">Submit</button>
+                    </div>
+                </form>
+                <form class="flex-form">
+                    <span class="form-description">Still not sure? Send me a message with any questions you have and I'll get back to you as soon as I can!</span>
+                    <div class="form-group">
+                        <label for="message-name">Name:</label>
+                        <input type="text" name="message-name" id="message-name"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-email">Email:</label>
+                        <input type="email" name="message-email" id="message-email"></input>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text">Message:</label>
+                        <textarea name="message-text" id="message-text"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="form-button" id="message-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials-container">
                 <a href="#">FB</a>
                 <a href="#">I</a>
                 <a href="#">LI</a>
                 <a href="#">GH</a>
             </div>
-        </section>
-    </main>
-    <footer>
         <span>Dan Ventura 2025 &copy;</span>
     </footer>
     <script type="text/javascript" src="logic.js"></script>
